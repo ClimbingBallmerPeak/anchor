@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Variables for Start Screen -->
+    <string name="app_name">Magic Macro List</string>
+
+    <!--  Variables for Start Screen -->
+    <string name="title">Magic</string>
+    <string name="title2">Macro</string>
+    <string name="title3">List</string>
+    <string name="begin_button_name">Begin</string>
+
+    <!--  Variables for Magic Dictionary -->
+    <string name="action_settings">Settings</string>
+
+</resources>
