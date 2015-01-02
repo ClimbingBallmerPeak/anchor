@@ -61,7 +61,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="loadMagicDictionary"
+        android:onClick="loadMacroListView"
         android:text="@string/begin_button_name"
         android:id="@+id/begin"
         android:layout_alignParentBottom="true"
