@@ -63,9 +63,8 @@ public class MagicDictionary extends ActionBarActivity {
         //  Create an Arraylist for use in the listview
         final ArrayList<String> list = new ArrayList<String>();
         // Populate the new ArrayList from the string array
-        for (int i = 0; i < values.length; ++i) {
-            list.add(values[i]);
-        }
+        for ( String i : values )
+            list.add(i);
 
         final StableArrayAdapter adapter = new StableArrayAdapter(this,android.R.layout.simple_list_item_1, list);
         listview.setAdapter(adapter);
