@@ -13,4 +13,11 @@
     <!--  Variables for Magic Dictionary -->
     <string name="action_settings">Settings</string>
 
+    <!--  Variables for Magic Dictionary -->
+    <string name="macroName">Macro</string>
+    <string name="object">Dependent</string>
+    <string name="description">List</string>
+    <string name="search_button_name">Search</string>
+
+
 </resources>

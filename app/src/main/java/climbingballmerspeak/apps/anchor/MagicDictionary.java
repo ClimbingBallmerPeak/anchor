@@ -53,12 +53,23 @@ public class MagicDictionary extends ActionBarActivity {
         //  Define adapter in listview
         listview.setAdapter(adapter);
 
+        //  Now setup a basic listener for the listView selection
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
+            @Override
+            public void onItemClick(AdapterView<?> parent, final View view,
+                                    int position, long id) {
+                final String item = (String) parent.getItemAtPosition(position);
+                
+                setContentView(R.layout.activity_magic_dictionary);
+            }
+
+        });
 
     }
 
     /**
-     * Called when the user chooses a listview item
+     * Called when the user chooses a listview item  // not really
      */
     public void loadMagicDictionary(View view) {
         setContentView(R.layout.activity_magic_dictionary);
@@ -67,26 +78,3 @@ public class MagicDictionary extends ActionBarActivity {
 }
 
 
-
-
-        /*  Backed up listener code
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, final View view,
-                                    int position, long id) {
-                final String item = (String) parent.getItemAtPosition(position);
-                view.animate().setDuration(2000).alpha(0)
-
-                        .withEndAction(new Runnable() {
-                            @Override
-                            public void run() {
-                                //list.remove(item);
-                                adapter.notifyDataSetChanged();
-                                view.setAlpha(1);
-                            }
-                        });
-                 }
-
-        });
-        */
