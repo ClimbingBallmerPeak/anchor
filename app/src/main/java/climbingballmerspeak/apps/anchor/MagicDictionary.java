@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 
 public class MagicDictionary extends ActionBarActivity {
@@ -59,9 +60,22 @@ public class MagicDictionary extends ActionBarActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, final View view,
                                     int position, long id) {
+                //  Acquire data from adapter
                 final String item = (String) parent.getItemAtPosition(position);
-                
+
+
+                // Load new content into the layout resource, get textview locations
                 setContentView(R.layout.activity_magic_dictionary);
+
+                TextView macro = (TextView) findViewById(R.id.macroNameText);
+                TextView object = (TextView) findViewById(R.id.objectText);
+                TextView description = (TextView) findViewById(R.id.descriptionText);
+
+                // Set display text
+                macro.setText("@.appl");
+                object.setText("/(.S)APPL");
+                description.setText("The currently defined application");
+
             }
 
         });
